@@ -1,14 +1,14 @@
 package org.example.pomodoro
 
 class Tag {
-	String name
+    String name
 	
-	static hasMany = [tasks: Task]
-	static belongsTo = Task
+    static hasMany = [tasks: Task]
+    static belongsTo = Task
 
     static constraints = {
-		name blank: false, unique: true
+        name blank: false, unique: true
     }
 	
-	String toString() { return name }
+    String toString() { return name }
 }

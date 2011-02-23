@@ -1,5 +1,5 @@
 package org.example.pomodoro
 
 class TagController {
-	static scaffold = Tag
+    static scaffold = Tag
 }
