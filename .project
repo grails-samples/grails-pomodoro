@@ -6,6 +6,11 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
+			<name>org.eclipse.wst.common.project.facet.core.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
@@ -15,8 +20,24 @@
 		<nature>com.springsource.sts.grails.core.nature</nature>
 		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 	</natures>
 	<linkedResources>
+		<link>
+			<name>blueprint-1.0.2-grails-app-conf</name>
+			<type>2</type>
+			<locationURI>GRAILS_ROOT/1.3.6/projects/PomodoroApp/plugins/blueprint-1.0.2/grails-app/conf</locationURI>
+		</link>
+		<link>
+			<name>blueprint-1.0.2-grails-app-i18n</name>
+			<type>2</type>
+			<locationURI>GRAILS_ROOT/1.3.6/projects/PomodoroApp/plugins/blueprint-1.0.2/grails-app/i18n</locationURI>
+		</link>
+		<link>
+			<name>blueprint-1.0.2-grails-app-taglib</name>
+			<type>2</type>
+			<locationURI>GRAILS_ROOT/1.3.6/projects/PomodoroApp/plugins/blueprint-1.0.2/grails-app/taglib</locationURI>
+		</link>
 		<link>
 			<name>tomcat-1.3.6-src-groovy</name>
 			<type>2</type>
