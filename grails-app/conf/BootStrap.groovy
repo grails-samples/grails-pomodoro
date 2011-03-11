@@ -9,7 +9,26 @@ class BootStrap {
         
         def task = new Task(
                 summary: "Do 2nd intro screencast",
-                details: "Create the second intro screencast for Grails")
+                details: "Create the second intro screencast for Grails",
+                status: "Open",
+                deadline: new Date() + 15)
+        task.addToTags(workTag)
+        task.addToTags(homeTag)
+        task.save(failOnError: true)
+        
+        task = new Task(
+                summary: "Shopping",
+                details: "Do the grocery shopping - and don't forget the tomatoes!",
+                status: "Open",
+                deadline: new Date() + 3)
+        task.addToTags(homeTag)
+        task.save(failOnError: true)
+        
+        task = new Task(
+                summary: "Finish Grails presentation",
+                details: "The last presentation on Grails & AMQP for SpringOne 2GX needs finishing.",
+                status: "Open",
+                deadline: new Date() + 30)
         task.addToTags(workTag)
         task.addToTags(homeTag)
         task.save(failOnError: true)
