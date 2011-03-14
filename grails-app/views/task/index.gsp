@@ -8,18 +8,18 @@
 <body>
     <div class="container">
         <h1 class="span-24 last">Pomodoro Task Manager</h1>
-        <div class="span-24">
-                    <div class="span-16">
+        <div class="span-24 last">
+            <div class="span-16">
                 <h2>Open Tasks</h2>
-                    </div>
-                    <div class="span-4">
+            </div>
+            <div class="span-4">
                 <ul class="actions"><li>New</li></ul>
-                    </div>
-                    <div class="span-4 last"></div>
+            </div>
+            <div class="span-4 last"></div>
         </div>
-                <div class="span-20"> 
+        <div class="span-20"> 
             <g:render template="taskCard" collection="${tasks}" var="task"/>
-                </div>
+        </div>
         <div class="span-4 last">
             <dl class="sidebar">
                 <dt>Show</dt>
