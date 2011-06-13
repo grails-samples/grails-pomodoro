@@ -33,4 +33,8 @@ class MainTagLib {
         
         out << "<span class=\"$cssClass\">" << pomo.shortDate(date: attrs.date) << "</span>"
     }
+    
+    def textToParagraphs = { attrs, body ->
+        out << "<p>" << body().trim().replaceAll(/(\s*\n)+/, "<p></p>") << "</p>"
+    }
 }
