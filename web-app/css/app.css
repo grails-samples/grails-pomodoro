@@ -19,3 +19,15 @@ ul.actions {
     bottom: 1.5em;
     right: 1.5em;
 }
+
+.due .past {
+    color: #D00;
+}
+
+.due .today {
+    color: #00D;
+}
+
+.due .imminent {
+    color: #D90;
+}
